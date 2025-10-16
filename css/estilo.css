@@ -1,29 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: auto;
+}
+ 
 body {
-    background: green;
+    background: rgb(191, 255, 224);
 }
-
-h1,h2 {
-    font-family: 'Noto Sans JP', sans-serif;
-
+ 
+h1,
+h2 {
+    font-family: "Zalando Sans Expanded", sans-serif;
 }
-p{
-    font-family: 'Bitcount Grid Double Ink', cursive;
+ 
+p {
+    font-family: "Lato", sans-serif;
+    ;
 }
-
-
+ 
 header {
     text-align: center;
-    border-bottom: solid 4px blue;
-    margin-bottom: 50px;
-    padding: 20px;
+    border-bottom: solid 6px rgb(29, 54, 29);
+    /* margen del borde hacia afuera */
+    padding: 20px;
+    /* margen interno */
 }
-#foto-perfil{
-    border:solid blue 2px;
+ 
+#menu-principal {
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
 }
-article{
-    border:solid red 2px;
+ 
+#menu-principal ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+ 
+#menu-principal a {
+    text-decoration: none;
+    color: #1103dd;
+    font-weight: bolder;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+ 
+#menu-principal a:hover {
+    background-color: #1103dd;
+    color: #fff;
+    border-radius: 10px;
+}
+ 
+#bienvenida {
+    background-color: #fff9c2;
+    padding: 30px 40px;
+}
+ 
+#foto-perfil {
+    border-radius: 20px;
+}
+ 
+#experiencia {
+    background-color: #b8dff5;
+    padding: 30px 40px;
+    border-top: solid 5px #980e0e;
+}
+ 
+#lista-proyectos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+ 
+.proyecto {
+    border: solid #980e0e 2px;
     width: 30%;
-    float: left;
+    border-radius: 10px;
+    padding: 10px;
 }
+ 
+#habilidades {
+    padding: 20px 30px;
+    background-color: #fff;
+}
+ 
+.lista-tecnologias {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    gap: 20px;
+}
+ 
+.lista-tecnologias li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+ 
+progress {
+    width: 100%;
+    height: 25px;
+    margin: 10px 0;
+    background: #980e0e;
+}
+ 
+#contacto {
+    padding: 30px 20px;
+    background-color: #fff;
+    border-top: solid 5px #980e0e;
+}
+ 
+#contacto label {
+    font-size: 20px;
+}
+ 
+#contacto input,
+textarea {
+    font-size: 30px;
+    border: solid 1px #1103dd;
+    padding: 10px;
+    width: 30%;
+}
+ 
+#contacto button {
+    background-color: #440368;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    font-size: 20px;
+}
+ 
+.campos {
+    clear: both;
+    padding-top: 20px;
+}   
